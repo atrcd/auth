@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-image: url(img/DALL·E\ 2024-11-12\ 16.34.42\ -\ A\ 4K\ daytime\ landscape\ view\ of\ Rio\ de\ Janeiro\,\ showing\ Sugarloaf\ Mountain\ and\ Christ\ the\ Redeemer\ statue\ on\ Corcovado\ mountain\ under\ a\ bright\ blue\ sky.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    margin-top: 3rem;
+}
+.card{
+    background-color: #0000007b;
+    backdrop-filter: blur(3px);
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px 0px #00000038;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 400px;
+}
+h1{
+    text-align: center;
+    color: #fff;
+}
+input{
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid gray;
+    background-color: transparent;
+    outline: none;
+    transition: all .3s ease-out;
+    font-size: 16px;
+}
+input:focus{
+    border-bottom: 2px solid rgb(57, 57, 57);
+}
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.label-float label{
+    color: #fff;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+input:focus + label,
+input:valid + label {
+    margin-top: 0;
+    font-size: 13px;
+}
+button{
+    background-color: transparent;
+    backdrop-filter: blur(1px);
+    border:none;
+    border: 2px solid gray;
+    padding: 7px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+}
+.eye{
+    position: absolute;
+    right: 7px;
+    cursor: pointer;
+}
+#msgError{
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
+#msgSuccess{
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
